@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ExtensionMethodsLinq
 {
-    class Employee
+    public class Employee
     {
         public string Name { get; set; }
         public int Salary { get; set; }
@@ -15,9 +15,16 @@ namespace ExtensionMethodsLinq
             Salary = salary;
         }
 
+        public string NameToUpper()
+        {
+            return Name.ToUpper();
+        }
+
         public override string ToString()
         {
             return $"Name: {Name} Salary: {Salary}";
         }
+
+
     }
 }
