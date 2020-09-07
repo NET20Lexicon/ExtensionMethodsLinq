@@ -19,15 +19,15 @@ namespace ExtensionMethodsLinq
 
         //public static void PrintAll(this List<Employee> collection)
         //{
-        //    collection.ForEach((e) => 
+        //    collection.ForEach((e) =>
         //    {
         //        //blaha 
         //        Console.WriteLine(e);
-                
+
         //    });
-           
-        //} 
-        
+
+        //}
+
         public static void PrintAll<T>(this IEnumerable<T> collection)
         {
             foreach (T item in collection)
